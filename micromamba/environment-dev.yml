@@ -22,4 +22,5 @@ dependencies:
   - pytest-lazy-fixture
   - pyyaml
   - spdlog
+  - taskflow
   - sel(win): winreg

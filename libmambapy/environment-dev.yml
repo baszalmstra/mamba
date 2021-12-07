@@ -19,6 +19,7 @@ dependencies:
   - termcolor-cpp
   - cli11
   - spdlog
+  - taskflow
   - pybind11
   - pytest
   - sel(win): winreg

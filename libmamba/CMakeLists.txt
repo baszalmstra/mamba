@@ -391,6 +391,10 @@ macro(libmamba_create_target target_name linkage deps_linkage output_name)
                               Threads::Threads)
     endif ()
 
+    find_package(Taskflow REQUIRED)
+    target_link_libraries(${target_name} PRIVATE
+            Taskflow::Taskflow)
+
     list(APPEND libmamba_targets ${target_name})
 endmacro()
 
